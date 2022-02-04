@@ -9,7 +9,7 @@ pipeline {
     stages {
       stage('checkout') {
            steps {
-                git branch: 'master', url: 'https://github.com/amitkumar20201/maven-app.git'
+                git branch: 'master', url: 'https://github.com/ganesh1019/ansible_project'
           }
         }
 
@@ -22,9 +22,7 @@ pipeline {
        
         
     stage('Ansible Deploy') {
-             
             steps {
-			   //sh "ansible-playbook playbooks/install-tomcat.yaml"
 			   sh "ansible-playbook /home/ansible/playbooks/install-tomcat.yaml --user ansible --key-file /home/ansible/.ssh/id_rsa"
             }
         }
