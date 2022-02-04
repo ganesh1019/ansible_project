@@ -1,10 +1,10 @@
 pipeline {
     agent any
-    
+
     stages {
       stage('checkout') {
            steps {
-                git branch: 'master', url: 'https://github.com/ganesh1019/ansible_project'
+              git branch: 'main', credentialsId: 'jenkins1', url: 'https://github.com/ganesh1019/ansible_project.git'
           }
         }
 
