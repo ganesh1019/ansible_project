@@ -18,7 +18,7 @@ pipeline {
         
     stage('Ansible Deploy') {
             steps {
-			   sh "ansible-playbook playbooks/install-tomcat.yaml"
+			   sh "ansible-playbook playbooks/install-tomcat.yaml --user ansible --key-file /home/ansible/.ssh/id_rsa"
             }
         }
     }
