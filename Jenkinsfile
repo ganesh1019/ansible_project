@@ -4,7 +4,7 @@ pipeline {
     stages {
       stage('checkout') {
            steps {
-              git branch: 'main', credentialsId: 'jenkins1', url: 'https://github.com/ganesh1019/ansible_project.git'
+              git branch: 'main', credentialsId: 'jenkins1', url: 'https://github.com/ganesh1019/maven-app.git'
           }
         }
 
