@@ -11,7 +11,7 @@
 #        fi
 #      become: true
 
-- hosts: webservers
+- hosts: localhost
   become: yes
   gather_facts: false
   tasks:
