@@ -1,11 +1,6 @@
 pipeline {
     agent any
     
-    tools
-    {
-       maven "mymvn"
-    }
-     
     stages {
       stage('checkout') {
            steps {
