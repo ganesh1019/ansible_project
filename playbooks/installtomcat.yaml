@@ -1,4 +1,4 @@
-- hosts: tomcat
+- hosts: localhost
   become: yes
   tasks:
     - name: update
